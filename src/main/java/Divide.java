@@ -14,7 +14,7 @@ public class Divide {
 
 
         for (int i = 0; i < mas.length; i++) {
-            if (mas[i] % 3 == 0) {
+            if (mas[i] % 3 == 0 & mas[i] != 0) {
                 System.out.print(mas[i] + " ");
             }
         }
