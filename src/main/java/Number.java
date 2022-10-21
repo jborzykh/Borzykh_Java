@@ -13,6 +13,9 @@ static void check() {
             if (number >7 ) {
                 hello();
             }
+            else{
+                less();
+            }
       }
 
 
@@ -22,6 +25,9 @@ static void check() {
     static void hello() {
         System.out.println("“Привет”");
 
+    }
+    static void less(){
+        System.out.println("Your number is less than 8");
     }
 
 
