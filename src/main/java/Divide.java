@@ -6,15 +6,23 @@ public class Divide {
         try {
             System.out.println("Enter the length of your Array:");
             int len = scanner.nextInt();
-            int[] mas = new int[len];
-            for (int i = 0; i < mas.length; i++) {
-                mas[i] = scanner.nextInt();
+            if (len == 0) {
+                System.out.println("Array can not be zero!");
             }
+            if (len != 0 ) {
+
+                int[] mas = new int[len];
+                System.out.println("Enter the numbers:");
+                for (int i = 0; i < mas.length; i++) {
+
+                    mas[i] = scanner.nextInt();
+                }
 
 
-            for (int i = 0; i < mas.length; i++) {
-                if (mas[i] % 3 == 0 & mas[i] != 0) {
-                    System.out.print(mas[i] + " ");
+                for (int i = 0; i < mas.length; i++) {
+                    if (mas[i] % 3 == 0 & mas[i] != 0) {
+                        System.out.print(mas[i] + " ");
+                    }
                 }
             }
 
